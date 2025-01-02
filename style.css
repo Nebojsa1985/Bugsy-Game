@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.phone-message {
+  display: none;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -120,4 +124,47 @@ img {
 .levelBtn button:hover {
   color: #fff;
   background-color: rgb(5, 54, 96);
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1280px) {
+}
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .phone-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: antiquewhite;
+    padding: 50px;
+    text-align: center;
+  }
+  .head {
+    display: none;
+  }
+  .allLevels {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .phone-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: antiquewhite;
+    padding: 50px;
+    text-align: center;
+  }
+  .head {
+    display: none;
+  }
+  .allLevels {
+    display: none;
+  }
 }
